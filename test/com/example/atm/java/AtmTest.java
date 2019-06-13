@@ -8,16 +8,15 @@ class AtmTest {
     @Test
     public  void testBalance(){
         Atm machine = new Atm(0,0,0);
-        float result = machine.balanceEnquiry(20000);
-        assertEquals(20000, result);
+        float result = machine.add(20, 30);
+        assertEquals(50, result);
     }
 
     @Test
     public void testDeposit(){
         Atm machine = new Atm(0,0,0);
-
-        float result = machine.deposit( 20000, 20000);
-        assertEquals(40000, result);
+        float result = machine.deposit( 0, 20000, 40000, 150000);
+        assertEquals(20000, result);
 
     }
 
@@ -25,7 +24,7 @@ class AtmTest {
     public  void testWithdrwal(){
         Atm machine = new Atm(0,0,0);
 
-        float result = machine.withdraw( 20000, 20000);
+        float result = machine.withdraw( 20000, 20000, 20000, 50000);
         assertEquals(40000, result);
     };
 
