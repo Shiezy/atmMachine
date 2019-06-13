@@ -8,6 +8,8 @@ class AtmTest {
     @Test
     public  void testBalance(){
         Atm machine = new Atm(0,0,0);
+        float result = machine.balanceEnquiry(20000);
+        assertEquals(20000, result);
     }
 
     @Test
@@ -18,5 +20,13 @@ class AtmTest {
         assertEquals(40000, result);
 
     }
+
+    @Test
+    public  void testWithdrwal(){
+        Atm machine = new Atm(0,0,0);
+
+        float result = machine.withdraw( 20000, 20000);
+        assertEquals(40000, result);
+    };
 
 }

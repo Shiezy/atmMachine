@@ -38,7 +38,7 @@ public class Atm{
                     if(deposit < 150000 && depositCount < 4){
                         System.out.println("Enter Amount to deposit");
                         float amount = input.nextFloat();
-                        float amounts = deposit(balance, amount);
+                        float totalDeposits = deposit(deposit, amount);
                     }  else {
                         System.out.println("You have Reached your max deposit for the day");
                         menuOptions();
@@ -46,7 +46,14 @@ public class Atm{
 
                         break;
                 case 3:
-                    withdraw();
+                    if(withdrawal < 50000 && withdrawalCount < 3){
+                        System.out.println("Enter Amount to withdraw");
+                        float withdrawalAmount = input.nextFloat();
+                        withdraw(withdrawal, withdrawalAmount);
+                    }else {
+                        System.out.println("You have Reached your max withdrawal for the day");
+                        menuOptions();
+                    }
                     break;
                 case 4:
                     System.out.println("Are you sure you wish to quit? Type No If not sure");
@@ -73,22 +80,16 @@ public class Atm{
         return userBalance;
     }
     public float deposit(float userDeposit, float amount){
-        float arr[] = new float[2];
-//        if(userDeposit < 150000 && depositCount < 4){
-//            depositCount++;
-//            Scanner input =  new Scanner(System.in);
-//            System.out.println("Enter Amount to deposit");
-//            float amount = input.nextFloat();
+            float newDeposit = 0;
             if(amount <= 40000){
-                float newDeposit = userDeposit + amount;
+                newDeposit = userDeposit + amount;
                 if(newDeposit <= 150000) {
                     balance += amount;
+                    depositCount++;
                     deposit = newDeposit;
                     System.out.println("Amount Deposited : " + amount);
                     System.out.println("New Balance  : " + balance);
-                    menuOptions();
-                    arr[0] = amount;
-                    arr[1] = newDeposit;
+//                    menuOptions();
 
                 } else{
                     System.out.println("Amount surpasses daily limit. Max allowed is : " + (150000-userDeposit));
@@ -98,30 +99,22 @@ public class Atm{
                 System.out.println(" You can only deposit 40,000 per transaction  " );
 
             }
-            return amount;
+            menuOptions();
+            return newDeposit;
 
-//        }
-//        else {
-//            System.out.println("You have Reached your max deposit for the day");
-//            menuOptions();
-//            return 0;
-//        }
     }
-    public void withdraw(){
-        if(withdrawal < 50000 && withdrawalCount < 3){
-            withdrawalCount++;
-            Scanner input =  new Scanner(System.in);
-            System.out.println("Enter Amount to withdraw");
-            float amount = input.nextFloat();
+    public float withdraw(float userWithdrwal, float amount){
+            float newWithdrawal = 0;
             if(amount <= 20000){
-                float newWithdrawal = withdrawal + amount;
-                if(newWithdrawal> 50000){
-                    System.out.println("Amount surpasses daily limit. Max allowed is : " + (50000-withdrawal));
-                }else{
+                newWithdrawal = userWithdrwal + amount;
+                if(newWithdrawal <= 50000){
                     balance -= amount;
+                    withdrawalCount++;
                     withdrawal += amount;
                     System.out.println("Amount Deposited : " + amount);
                     System.out.println("New Balance  : " + balance);
+                }else{
+                    System.out.println("Amount surpasses daily limit. Max allowed is : " + (50000-withdrawal));
                 }
 
             }else {
@@ -129,11 +122,7 @@ public class Atm{
             }
 
             menuOptions();
-        }else {
-            System.out.println("You have Reached your max withdrawal for the day");
-            menuOptions();
-        }
-
+            return newWithdrawal;
     }
     public static void main(String args[]){
         Atm machine = new Atm(0,0,0);
