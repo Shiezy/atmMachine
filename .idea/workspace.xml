@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="898acc05-8120-426e-b3ab-86a2a9de0386" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtmMachine/com/example/atm/java/Atm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtmMachine/com/example/atm/java/Atm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/AtmMachine/com/example/atm/java/AtmTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/AtmMachine/com/example/atm/java/AtmTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/atm/java/Atm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/atm/java/Atm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/example/atm/java/AtmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/example/atm/java/AtmTest.java" afterDir="false" />
@@ -16,26 +15,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/atm/java/Atm.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/example/atm/java/AtmTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" selection-start-line="10" selection-end-line="11" />
+            <state relative-caret-position="360">
+              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#quitEvaluate#0;class#Atm#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/example/atm/java/AtmTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/atm/java/Atm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="-52">
+              <caret line="117" column="51" lean-forward="true" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="method#quitEvaluate#0;class#Atm#0" />
               </folding>
             </state>
           </provider>
@@ -62,8 +62,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/atm/java/Atm.java" />
         <option value="$PROJECT_DIR$/test/com/example/atm/java/AtmTest.java" />
+        <option value="$PROJECT_DIR$/src/com/example/atm/java/Atm.java" />
       </list>
     </option>
   </component>
@@ -79,8 +79,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,6 +105,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AtmTest.testBalance">
+  <component name="RunManager" selected="JUnit.AtmTest.testDeposit">
     <configuration name="AtmMachineProgram" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.atm.java.Atm" />
       <module name="AtmMachine" />
@@ -170,6 +170,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AtmTest.testDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AtmMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.atm.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.atm.java" />
+      <option name="MAIN_CLASS_NAME" value="com.example.atm.java.AtmTest" />
+      <option name="METHOD_NAME" value="testDeposit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AtmTest.testWithdrwal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AtmMachine" />
       <extension name="coverage">
@@ -188,8 +204,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AtmTest.testBalance" />
+        <item itemvalue="JUnit.AtmTest.testDeposit" />
         <item itemvalue="JUnit.AtmTest.testWithdrwal" />
+        <item itemvalue="JUnit.AtmTest.testBalance" />
       </list>
     </recent_temporary>
   </component>
@@ -201,34 +218,56 @@
       <option name="presentableId" value="Default" />
       <updated>1560414463702</updated>
       <workItem from="1560414475015" duration="645000" />
-      <workItem from="1560415997344" duration="10230000" />
+      <workItem from="1560415997344" duration="10423000" />
+      <workItem from="1560426484185" duration="3533000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AtmTest_testWithdrwal - 2019.06.13 at 14h 30m 00s.xml">
+    <history-entry file="AtmTest_testDeposit - 2019.06.13 at 15h 03m 55s.xml">
+      <configuration name="AtmTest.testDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmTest_testBalance - 2019.06.13 at 15h 10m 18s.xml">
+      <configuration name="AtmTest.testBalance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmTest_testDeposit - 2019.06.13 at 15h 24m 24s.xml">
+      <configuration name="AtmTest.testDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmTest_testDeposit - 2019.06.13 at 15h 25m 04s.xml">
+      <configuration name="AtmTest.testDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmTest_testDeposit - 2019.06.13 at 15h 25m 09s.xml">
+      <configuration name="AtmTest.testDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmTest_testDeposit - 2019.06.13 at 15h 26m 05s.xml">
+      <configuration name="AtmTest.testDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmTest_testDeposit - 2019.06.13 at 15h 27m 12s.xml">
+      <configuration name="AtmTest.testDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AtmTest_testWithdrwal - 2019.06.13 at 15h 30m 21s.xml">
       <configuration name="AtmTest.testWithdrwal" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AtmTest_testBalance - 2019.06.13 at 14h 32m 10s.xml">
-      <configuration name="AtmTest.testBalance" configurationId="JUnit" />
+    <history-entry file="AtmTest_testWithdrwal - 2019.06.13 at 15h 32m 04s.xml">
+      <configuration name="AtmTest.testWithdrwal" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AtmTest_testBalance - 2019.06.13 at 14h 39m 39s.xml">
-      <configuration name="AtmTest.testBalance" configurationId="JUnit" />
+    <history-entry file="AtmTest_testWithdrwal - 2019.06.13 at 15h 35m 22s.xml">
+      <configuration name="AtmTest.testWithdrwal" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10875000" />
+    <option name="totallyTimeSpent" value="14601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31363636" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27272728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48371336" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.08957655" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -236,15 +275,16 @@
       <window_info anchor="bottom" id="Services" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.39413682" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32084692" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Ant" order="4" />
       <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.32954547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +295,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -276,10 +318,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/example/atm/java/AtmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="360">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -288,10 +337,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/atm/java/Atm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
+        <state relative-caret-position="-52">
+          <caret line="117" column="51" lean-forward="true" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
             <element signature="method#quitEvaluate#0;class#Atm#0" />
           </folding>
         </state>
